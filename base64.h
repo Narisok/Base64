@@ -1,0 +1,1 @@
+char* base64_encode(const unsigned char * data, const int size_bytes);
