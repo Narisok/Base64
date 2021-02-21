@@ -1,7 +1,4 @@
 #include "base64.h"
-#include <stdlib.h>
-#include<stdio.h>
-#include <string.h>
 
 static const char base64_map[]    = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 static const char base64url_map[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_";
