@@ -34,6 +34,7 @@ size_t base64url_encode(const unsigned char * data_to_encode, size_t bytes_count
  */
 size_t base64_decode(const char *encoded_data, size_t bytes_count, unsigned char *decoded_destination);
 
+// TODO ignore bad symbols and throw if not correct syntax
 /**
  * @brief decode base64 and base64url ecncoded data 
  * omission of all incorrect and syntactic errors of coded data
