@@ -1,7 +1,12 @@
 #include "base64.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 static const char base64_map[]    = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 static const char base64url_map[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_";
+
 
 size_t base64_calculate_encoded_size(size_t decoded_bytes_count)
 {
@@ -163,3 +168,7 @@ size_t base64_decode_safe(const char *encoded_data, size_t bytes_count, unsigned
 
     return iter - decoded_destination;
 }
+
+#ifdef __cplusplus
+}
+#endif

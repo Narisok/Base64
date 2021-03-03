@@ -1,5 +1,9 @@
 #include <stddef.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 // TODO description
 /**
  * @brief 
@@ -81,3 +85,7 @@ int base64_check(const char *encoded_data, size_t bytes_count); //TODO realize t
  * @return 1 if correct otherwise 0 
  */
 int base64url_check(const char *encoded_data, size_t bytes_count); //TODO realize this function
+
+#ifdef __cplusplus
+}
+#endif
